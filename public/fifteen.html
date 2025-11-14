@@ -1,55 +1,50 @@
-/* 
-Mohammad Noor Ghafoor Zada
-CS & 248, Bill Maccoy
-Fifteen Puzzle CSS
-   
-*/
+<!DOCTYPE html>
+<html>
+	<!--
+	CS 248, Project 4: Fifteen Puzzle
+	You should not modify fifteen.html.  Your JS code should work with an
+	unmodified version of this file.
+	-->
+	<head>
+		<title>CS 248 Fifteen Puzzle</title>
 
-body {
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: serif;
-    font-size: 14pt;
-}
+		<link href="https://webster.cs.washington.edu/images/fifteen/fifteen.gif"
+		      type="image/gif" rel="shortcut icon" />
 
-h1, .tile {
-    font-family: Candara, Corbel, monospace;
-}
+		<!-- your files that you will write -->
+		<link href="fifteen.css" type="text/css" rel="stylesheet" />
+		<script src="fifteen.js" type="text/javascript"></script>
+	</head>
 
-#puzzlearea {
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    position: relative;
-}
+	<body>
+		<h1>CS 248 Fifteen Puzzle</h1>
 
-.tile {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    border: 5px solid black;
-    box-sizing: content-box;
-    font-size: 40pt;
-    line-height: 90px;
-    text-align: center;
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    cursor: default;
-    transition: border-color .15s, color .15s, top .1s, left .1s;
-}
+		<p>
+			The goal of the fifteen puzzle is to un-jumble its fifteen squares
+			by repeatedly making moves that slide squares into the empty space.
+			How quickly can you solve it?
+		</p>
+		
+		<div id="puzzlearea">
+		<!--
+			this area holds the actual fifteen puzzle pieces
+			add to it as you need to
+		-->
+		</div>
 
-.tile.movable {
-    cursor: pointer;
-}
+		<p id="controls">
+			<button id="shufflebutton">Shuffle</button>
+		</p>
+		
+		<div id="output"></div>
+		
+		<p>
+			American puzzle author and mathematician Sam Loyd is often falsely
+			credited with creating the puzzle; indeed, Loyd claimed from 1891
+			until his death in 1911 that he invented it.
+			The puzzle was actually created around 1874 by Noyes Palmer Chapman,
+			a postmaster in Canastota, New York.
+		</p>
 
-.tile.movable:hover {
-    border-color: red;
-    color: red;
-}
-
-#shufflebutton {
-    font-size: 16pt;
-    padding: 10px 25px;
-    border-radius: 12px;
-}
+	</body>
+</html>
