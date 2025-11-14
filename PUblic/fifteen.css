@@ -20,10 +20,9 @@ h1, .tile {
 #puzzlearea {
     width: 400px;
     height: 400px;
+    margin: auto;
     position: relative;
-    background-image: url("your-image.jpg");
-    background-size: 400px 400px; }
-
+}
 
 .tile {
     position: absolute;
