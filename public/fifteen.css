@@ -1,0 +1,55 @@
+/* 
+Mohammad Noor Ghafoor Zada
+CS & 248, Bill Maccoy
+Fifteen Puzzle CSS
+   
+*/
+
+body {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: serif;
+    font-size: 14pt;
+}
+
+h1, .tile {
+    font-family: Candara, Corbel, monospace;
+}
+
+#puzzlearea {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.tile {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 5px solid black;
+    box-sizing: content-box;
+    font-size: 40pt;
+    line-height: 90px;
+    text-align: center;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    cursor: default;
+    transition: border-color .15s, color .15s, top .1s, left .1s;
+}
+
+.tile.movable {
+    cursor: pointer;
+}
+
+.tile.movable:hover {
+    border-color: red;
+    color: red;
+}
+
+#shufflebutton {
+    font-size: 16pt;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
